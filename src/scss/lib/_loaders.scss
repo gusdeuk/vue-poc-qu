@@ -1,0 +1,48 @@
+/* --------------------------------------- */
+/* CSS LOADERS */
+/* --------------------------------------- */
+
+.loader-oval {
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 20px;
+    background-image: url("data:image/svg+xml,%3Csvg width='46px' height='46px' viewBox='0 0 46 46' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cg id='Page-1' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cpath d='M23,43 C34.045695,43 43,34.045695 43,23 C43,11.954305 34.045695,3 23,3 C11.954305,3 3,11.954305 3,23' id='Oval' stroke='%23cccccc' stroke-width='5'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
+}
+.loader-oval.small {
+    width: 22px;
+    height: 22px;
+}
+.loader-oval.med {
+    width: 32px;
+    height: 32px;
+}
+.loader-oval.big {
+    width: 46px;
+    height: 46px;
+}
+.loader-oval.spin-me {
+    -webkit-animation: spin 0.8s linear infinite;
+    -moz-animation: spin 0.8s linear infinite;
+    animation: spin 0.8s linear infinite;
+    animation-name: spin;
+    animation-duration: 800ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@-moz-keyframes spin {
+    100% {
+        -moz-transform: rotate(360deg);
+    }
+}
+@-webkit-keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+@keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}

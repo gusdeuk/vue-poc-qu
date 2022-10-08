@@ -1,0 +1,63 @@
+/* ------------------------------------------------ */
+/* Component level scoped styles */
+/* ------------------------------------------------ */
+.tag-component {
+    font-size: 1.1rem;
+    font-weight: 500;
+    line-height: 1.1rem;
+    text-transform: uppercase;
+    padding: 2px 7px;
+    border-radius: 50px;
+    margin-right: 3px;
+    max-width: 105px;
+
+    display: inline-block;
+    // default colors
+    color: #fff;
+    background-color: rgb(172, 172, 172);
+}
+.climate-color-tropical {
+    background-color: rgb(248, 132, 54);
+}
+.climate-color-temperate {
+    background-color: rgb(103, 167, 29);
+}
+.climate-color-hot {
+    background-color: #ba333d;
+}
+.climate-color-humid {
+    background-color: rgb(68, 162, 240);
+}
+.climate-color-arid {
+    background-color: rgb(190, 188, 22);
+}
+.climate-color-frozen {
+    background-color: rgb(0, 192, 209);
+}
+.climate-color-murky {
+    background-color: rgb(31, 99, 43);
+}
+.climate-color-frigid {
+    background-color: rgb(114, 17, 122);
+}
+.climate-color-polluted {
+    background-color: rgb(179, 92, 35);
+}
+.climate-color-unknown {
+    background-color: rgb(114, 195, 203);
+}
+.climate-color-superheated {
+    background-color: rgb(255, 82, 70);
+}
+.climate-color-rocky {
+    background-color: rgb(194, 106, 103);
+}
+.climate-color-subartic {
+    background-color: rgb(233, 129, 124);
+}
+.climate-color-artic {
+    background-color: rgb(46, 198, 221);
+}
+.climate-color-windy {
+    background-color: rgb(100, 119, 202);
+}

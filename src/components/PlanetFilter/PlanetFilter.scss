@@ -1,0 +1,35 @@
+/* ------------------------------------------------ */
+/* Component level scoped styles */
+/* ------------------------------------------------ */
+.planet-filter-component {
+    background-color: transparent;
+    position: absolute;
+    right: 0;
+    top: -53px;
+    .block-filters {
+        .item {
+            display: inline-block;
+            margin: 5px 10px;
+        }
+        .form-check-label {
+            font-size: 1.1rem;
+            font-weight: 500;
+            color: #797979;
+            text-transform: uppercase;
+        }
+    }
+}
+
+// -------------------------------------------------------
+// scoped media queries
+@media screen and (max-width: 992px) {
+    .planet-filter-component {
+        position: static;
+
+        text-align: center;
+        .block-filters {
+            .item {
+            }
+        }
+    }
+}

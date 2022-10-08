@@ -1,0 +1,86 @@
+/* --------------------------------------- */
+/* BASE MAIN SCOPE CSS */
+/* --------------------------------------- */
+
+html {
+    height: 100%;
+    // set easy calculation font size to the whole app,
+    // adjust REM to base 10px
+    // 1rem /* =10px */
+    // 1.4rem; /* =14px */
+    // 2.4rem; /* =24px */
+    font-size: 62.5%;
+    body {
+        //----------------------------------------------
+        // base font setup
+        font-size: 1.4rem; /* =14px */
+        font-weight: 400;
+
+        font-family: Poppins, Helvetica, Arial, sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-overflow-scrolling: touch;
+        color: #707070;
+        background-color: #f7f7f7;
+        height: 100%;
+
+        .app-global {
+            height: 100%;
+
+            .main-wrapper {
+                $nav-height: 110px;
+                $foot-height: 30px;
+
+                .header-wrapper {
+                    height: $nav-height;
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    z-index: 100;
+                    background-color: white;
+                }
+
+                .content-wrapper {
+                    position: absolute;
+                    top: $nav-height;
+                    left: 0;
+                    right: 0;
+                    bottom: $foot-height;
+                    padding: 30px;
+
+                    .page-title {
+                        font-size: 30px;
+                        font-weight: 200;
+                        border-bottom: dashed 1px #dfdfdf;
+                        padding-bottom: 5px;
+                        margin-bottom: 10px;
+                        color: $color-cyan;
+                    }
+                    .page-content {
+                        padding-bottom: 30px;
+                    }
+                }
+
+                .footer-wrapper {
+                    height: $foot-height;
+                    position: fixed;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    z-index: 100;
+                    color: #fff;
+                    background-color: $color-wine;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .content-wrapper {
+        .page-title {
+            text-align: center;
+        }
+    }
+}

@@ -1,0 +1,39 @@
+/* ------------------------------------------------ */
+/* Component level scoped styles */
+/* ------------------------------------------------ */
+.planet-item-component {
+    background-color: white;
+    height: 160px;
+    overflow: hidden;
+    border-radius: 8px;
+    border: solid 1px #dfdfdf;
+    padding: 5px 10px;
+    font-size: 1.3rem;
+    position: relative;
+    .name {
+        font-size: 1.3rem;
+        text-transform: uppercase;
+        color: #ba333d;
+        border-bottom: dashed 1px #dcdcdc;
+        margin-bottom: 5px;
+    }
+    .data {
+        font-size: 1rem;
+        span {
+            font-weight: 600;
+            color: #77b8bd;
+        }
+    }
+    .tag-wrapper {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        background-color: #efefef;
+        height: 30px;
+        overflow: hidden;
+        padding: 5px 5px;
+    }
+}

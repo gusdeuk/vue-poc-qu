@@ -1,0 +1,35 @@
+/* ------------------------------------------------ */
+/* bootstrap v5 css test */
+/* ------------------------------------------------ */
+/*
+TODO: Replace this base stuff with Vuetify v3 or Quasar v3 when available
+https://v5.getbootstrap.com/
+https://v5.getbootstrap.com/docs/5.0/getting-started/contents/
+https://www.techiediaries.com/vue-bootstrap/
+*/
+// get bootstrap 5 reset / utils and grid only
+// @import "../vendor/bootstrap/css/bootstrap-reboot.css";
+// @import "../vendor/bootstrap/css/bootstrap-utilities.css";
+// @import "../vendor/bootstrap/css/bootstrap-grid.css";
+// get bootstrap 5 full CSS
+@import "../vendor/bootstrap/css/bootstrap.css";
+@import "../vendor/animation/animate.css";
+
+/* ------------------------------------------------ */
+/* webfonts >> local or remote */
+// @import "https://fonts.googleapis.com/css?family=Material+Icons";
+@import "../fonts/poppins/_stylesheet.css";
+
+/* ------------------------------------------------ */
+/* globals styles vars and mixins */
+@import "./common/variables";
+@import "./common/mixins";
+@import "./common/palette";
+
+/* ------------------------------------------------ */
+/* globals styles / ui elements */
+@import "./app-global";
+@import "./app-global-overrides";
+@import "./lib/helpers";
+@import "./lib/loaders";
+@import "./lib/scrollbars-custom";

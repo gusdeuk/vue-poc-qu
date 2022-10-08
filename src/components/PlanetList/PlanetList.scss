@@ -1,0 +1,86 @@
+/* ------------------------------------------------ */
+/* Component level scoped styles */
+/* ------------------------------------------------ */
+$card-margin: 5px;
+.planet-list-component {
+    background-color: transparent;
+    position: relative;
+
+    .planet-list {
+        // compensate margin
+        margin: 0 -7px;
+        .list-item {
+            width: calc(16.66% - #{$card-margin * 2});
+            float: left;
+            margin: $card-margin;
+        }
+    }
+    .loader-wrap {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 50px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .planet-list-component {
+        .planet-list {
+            .list-item {
+                width: calc(20% - #{$card-margin * 2});
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .planet-list-component {
+        .planet-list {
+            .list-item {
+                width: calc(33.33% - #{$card-margin * 2});
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .planet-list-component {
+        .planet-list {
+            .list-item {
+                width: calc(50% - #{$card-margin * 2});
+            }
+        }
+    }
+}
+@media screen and (max-width: 500px) {
+    .planet-list-component {
+        .planet-list {
+            .list-item {
+                width: 100%;
+            }
+        }
+    }
+}
+
+/* ------------------------------------------------ */
+/* aminations for transition group */
+/* ------------------------------------------------ */
+.planet-list-enter-from,
+.planet-list-leave-to {
+    opacity: 0;
+    transform: scale(0.8);
+}
+
+.planet-list-enter-active {
+    transition: all 0.3s ease-out;
+}
+
+.planet-list-leave-active {
+    transition: all 0.35s ease-in;
+}
+
+.planet-list-enter-to,
+.planet-list-leave-from {
+    opacity: 1;
+    transform: scale(1);
+}

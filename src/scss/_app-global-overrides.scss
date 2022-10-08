@@ -1,0 +1,13 @@
+/* --------------------------------------- */
+/* BASE MAIN SCOPE CSS */
+/* --------------------------------------- */
+
+.form-check-input:checked {
+    background-color: $color-wine;
+    border-color: $color-wine;
+}
+.form-check-input:focus {
+    border-color: #f7bbff;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgba(227, 112, 250, 0.25);
+}
